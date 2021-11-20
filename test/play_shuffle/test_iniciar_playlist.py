@@ -1,5 +1,5 @@
 import pytest
-from src.iniciar_playlist import iniciar_playlist
+from src.play_shuffle.iniciar_playlist import iniciar_playlist
 
 
 @pytest.mark.test_comprobar_funcion

@@ -1,5 +1,5 @@
 import pytest
-from src.play_shuffle import play_shuffle
+from src.play_shuffle.play_shuffle import play_shuffle
 
 libreria = {"Cancion1": {}, "Lady gaga": {}, "pesce in mano": {}, "roxxane": {}, "nata vota": {}}
 

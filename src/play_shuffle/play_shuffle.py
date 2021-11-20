@@ -1,4 +1,4 @@
-from src.selecciona_cancion_random import inicia_cache
+from src.play_shuffle.selecciona_cancion_random import inicia_cache
 
 
 def play_shuffle(libreria):
