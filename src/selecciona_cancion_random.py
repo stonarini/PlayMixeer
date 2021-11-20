@@ -1,5 +1,4 @@
 import random
-from typing import List
 
 
 def inicia_cache():
