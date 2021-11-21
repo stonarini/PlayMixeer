@@ -1,19 +1,17 @@
 import random
 
 
-def inicia_cache():
-    cache = []
-
+def inicia_canciones_conocidas(canciones_conocidas):
     def selecciona_cancion_random(libreria):
         assert isinstance(libreria, dict)
 
-        nonlocal cache
+        nonlocal canciones_conocidas
 
-        canciones_restantes = [cancion for cancion in libreria if cancion not in cache]
-        # canciones_restantes = list(set(libreria) - set(cache))
+        canciones_restantes = [cancion for cancion in libreria if cancion not in canciones_conocidas]
+        # canciones_restantes = list(set(libreria) - set(canciones_conocidas))
         cancion_seleccionada = random.choice(canciones_restantes)
 
-        cache.append(cancion_seleccionada)
+        canciones_conocidas.append(cancion_seleccionada)
 
         assert isinstance(cancion_seleccionada, str)
         assert cancion_seleccionada in libreria

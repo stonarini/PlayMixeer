@@ -1,7 +1,7 @@
 import pytest
 from src.play_shuffle.play_shuffle import play_shuffle
 
-libreria = {"Cancion1": {}, "Lady gaga": {}, "pesce in mano": {}, "roxxane": {}, "nata vota": {}}
+libreria = {"Aspettando il sole": {}, "Lady gaga": {}, "pesce in mano": {}, "roxxane": {}, "nata vota": {}}
 
 
 @pytest.mark.test_lista_aleatoria
