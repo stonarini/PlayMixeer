@@ -2,6 +2,8 @@ import subprocess
 
 
 def ejecutar_comando(comando):
+    assert isinstance(comando, list)
+    assert len(comando) > 1
     try:
         proceso = subprocess.Popen(comando)
     except OSError:
@@ -16,6 +18,7 @@ def ejecutar_comando(comando):
 
 
 def finalizar_proceso(proceso):
+    assert proceso is not None
     palabra_parar = ["stop", "end", "fin", "s", "kill", "finiquitao", "finalizar"]
     while proceso.poll() is not None:
         palabra = input("Finalizar el proceso (stop/fin): ").lower()
