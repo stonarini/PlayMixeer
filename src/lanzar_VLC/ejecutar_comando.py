@@ -1,4 +1,5 @@
 import subprocess
+import time
 
 
 def ejecutar_comando(comando):
@@ -19,6 +20,7 @@ def ejecutar_comando(comando):
 def finalizar_proceso(proceso):
     assert proceso is not None
     palabra_parar = ["stop", "end", "fin", "s", "kill", "finiquitao", "finalizar"]
+    time.sleep(0.5)
     while proceso.poll() is None:
         palabra = input("Finalizar el proceso (stop/fin): ").lower()
         if palabra in palabra_parar:
