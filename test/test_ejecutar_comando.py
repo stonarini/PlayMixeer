@@ -1,6 +1,5 @@
-import subprocess
 import pytest
-from src.lanzar_VLC.ejecutar_comando import ejecutar_comando, finalizar_proceso
+from src.lanzar_VLC.ejecutar_comando import ejecutar_comando
 
 comando = ["C:/Program Files/VideoLAN/VLC/vlc.exe", "./biblioteca/Rosexxa.mp3"]
 
