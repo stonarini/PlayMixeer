@@ -1,3 +1,7 @@
-__pycache__/
+.vscode/
 .pytest_cache/
+__pycache__/
 venv/
+pyvenv.cfg
+.pylintrc
+dfleta.py
