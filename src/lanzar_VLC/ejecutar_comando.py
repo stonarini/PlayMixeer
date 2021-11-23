@@ -11,7 +11,6 @@ def ejecutar_comando(comando):
     except ValueError:
         print("Argumentos invalidos")
     else:
-        print(proceso)
         print("lanzando VLC <3")
         return proceso
     return None
@@ -20,8 +19,9 @@ def ejecutar_comando(comando):
 def finalizar_proceso(proceso):
     assert proceso is not None
     palabra_parar = ["stop", "end", "fin", "s", "kill", "finiquitao", "finalizar"]
-    while proceso.poll() is not None:
+    while proceso.poll() is None:
         palabra = input("Finalizar el proceso (stop/fin): ").lower()
         if palabra in palabra_parar:
             proceso.terminate()
+            break
     print("Ha terminado el programa")

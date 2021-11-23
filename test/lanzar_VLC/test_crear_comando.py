@@ -1,6 +1,6 @@
 import sys
 import os
-from test.libreria import libreria, playlist
+from libreria import libreria, playlist
 import pytest
 from src.lanzar_VLC.crear_comando import crear_comando
 
