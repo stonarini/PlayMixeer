@@ -6,7 +6,7 @@ def crear_comando(libreria, playlist):
     assert isinstance(libreria, dict)
     assert isinstance(playlist, dict)
     if sys.platform == "win32":
-        comando = ["C:/Program File/VideoLAN/VLC/vlc.exe", "-I", "dummy", "--dummy-quiet"]
+        comando = ["C:/Program Files/VideoLAN/VLC/vlc.exe", "-I", "dummy", "--dummy-quiet"]
     else:
         comando = ["/usr/bin/cvlc"]
     assert isinstance(comando, list)

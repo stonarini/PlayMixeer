@@ -10,7 +10,7 @@ comando = crear_comando(libreria, playlist)
 @pytest.mark.test_VLC_instalado
 def test_VLC_instalado():
     if sys.platform == "win32":
-        assert comando[0] == "C:/Program File/VideoLAN/VLC/vlc.exe"
+        assert comando[0] == "C:/Program Files/VideoLAN/VLC/vlc.exe"
     else:
         assert comando[0] == "/usr/bin/cvlc"
 
