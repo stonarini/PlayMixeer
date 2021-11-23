@@ -1,7 +1,7 @@
 import sys
 import os
-from libreria import libreria, playlist
 import pytest
+from libreria import libreria, playlist
 from src.lanzar_VLC.crear_comando import crear_comando
 
 comando = crear_comando(libreria, playlist)
@@ -23,9 +23,9 @@ def test_lista_valida():
 @pytest.mark.test_ruta_existente
 def test_ruta_existente():
     if sys.platform == "win32":
-        assert False not in [os.path.exists(ruta) for ruta in comando[4:]]
+        assert False not in [os.path.exists(ruta) for ruta in comando[6:]]
     else:
-        assert False not in [os.path.exists(ruta) for ruta in comando[1:]]
+        assert False not in [os.path.exists(ruta) for ruta in comando[5:]]
 
 
 @pytest.mark.test_ruta_unica
